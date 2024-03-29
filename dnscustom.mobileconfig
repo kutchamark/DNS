@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>Custum DNS By debe</string>
+    <key>PayloadDescription</key>
+    <string>โปรไฟล์นี้เปิดใช้งาน NextDNS และ CloudflareDNS บนทุกเครือข่ายโดยใช้คุณสมบัติ Encrypted DNS ที่ฝังเข้ามา:
+
+1.อย่าใช้ VPN เมื่อใช้การตั้งค่า DNS นี้
+2.บล็อกอุปกรณ์เริ่มต้น: บล็อกโดยไม่ผ่านตัวกลางใด ๆ
+3.ใช้ใบรับรองที่ถูกยกเลิกจะช่วยให้คุณใช้ได้ยาวนานที่สุด
+4.บล็อกโฆษณาซึ่งได้รับการปรับปรุงและยังสามารถบล็อกได้อย่างมีประสิทธิภาพบนเบราว์เซอร์
+Join the group for support: https://discord.gg/4zrmpWsD
+</string>
+     <key>PayloadIdentifier</key>
+    <string>com.cloudflare.warp.fce662ea-7250-4acc-8d57-7e4449086d8a.profile</string>
+    <key>PayloadScope</key>
+    <string>User</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.fce662ea-7250-4acc-8d57-7e4449086d8a</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerURL</key>
+          <string>https://qikzyc2bzv.cloudflare-gateway.com/dns-query</string>
+        </dict>
+        <key>OnDemandRules</key>
+        <array>
+          <dict>
+            <key>Action</key>
+            <string>EvaluateConnection</string>
+            <key>ActionParameters</key>
+            <array>
+              <dict>
+                <key>DomainAction</key>
+                <string>NeverConnect</string>
+                <key>Domains</key>
+                <array>
+                  <string>dav.orange.fr</string>
+                  <string>msg.t-mobile.com</string>
+                </array>
+              </dict>
+            </array>
+          </dict>
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+          </dict>
+        </array>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadIdentifier</key>
+        <string>com.cloudflare.warp.fce662ea-7250-4acc-8d57-7e4449086d8a.profile.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.fce662ea-7250-4acc-8d57-7e4449086d8a.dnsSettings.managed</string>
+        <key>PayloadDisplayName</key>
+        <string>2.Zero Trust Anti certificate</string>
+        <key>PayloadOrganization</key>
+        <string>Script-AdBlock-Filters(Debe)</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+      </dict>
+      <!-- CustumDNS -->
+<dict>
+<key>DNSSettings</key>
+<dict>
+<key>DNSProtocol</key>
+<string>HTTPS</string>
+<key>ServerURL</key>
+<string>https://apple.dns.nextdns.io/ce2ce1/nhutggvn</string>
+<key>SupplementalMatchDomains</key>
+<array>
+<string>.certs.apple.com</string>
+<string>.certs2.apple.com</string>
+<string>.crl.apple.com</string>
+<string>.ff.apple.com</string>
+<string>.ffapple.com</string>
+<string>.mesu.apple.com</string>
+<string>.ocsp.apple.com</string>
+<string>.ocsp2.apple.com</string>
+<string>.ocsp3.apple.com</string>
+<string>.ocsp4.apple.com</string>
+<string>.valid.apple.com</string>
+<string>appattest.apple.com</string>
+<string>axm-app.apple.com</string>
+<string>certs.apple.com</string>
+<string>certs2.apple.com</string>
+<string>comm-cohort.ess.apple.com</string>
+<string>comm-main.ess.apple.com</string>
+<string>crl.apple.com</string>
+<string>ff.apple.com</string>
+<string>ff2.apple.com</string>
+<string>ff2apple.com</string>
+<string>ffapple.com</string>
+<string>gdmf.apple.com</string>
+<string>guzzoni-apple-com.v.aaplimg.com</string>
+<string>mesu.apple.com</string>
+<string>ocsp.apple.com</string>
+<string>ocsp2.apple.com</string>
+<string>ocsp3.apple.com</string>
+<string>ocsp4.apple.com</string>
+<string>valid.apple.com</string>
+<string>vpp.itunes.apple.com</string>
+<string>adclick.g.douclick.net</string>
+<string>googletagservices.com</string>
+<string>googleads.g.doubleclick.nett</string>
+<string>iadsdk.apple.com</string>
+<string>ppq.apple.com</string>
+<string>www.gdmf.apple.com</string>
+<string>sdfnhisbf — Today at 9:19 PM</string>
+<string>ocsp.int-x3.letsencrypt.org</string>
+<string>ocsp.apple.com</string>
+<string>world-gen.g.aaplimg.com</string>
+<string>mesu.apple.com</string>
+<string>gdmf.apple.com</string>
+</array>
+</dict>
+<key>OnDemandRules</key>
+<array>
+<dict>
+<key>Action</key>
+<string>Connect</string>
+</dict>
+</array>
+			<key>PayloadDisplayName</key>
+			<string>1.Anti revoked Apple certificate</string>
+			<key>PayloadIdentifier</key>
+			<string>io.nextdns.ce2ce1.profile</string>
+			<key>PayloadOrganization</key>
+			<string>Block default revocation(DEBE)</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.ce2ce1.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+    <dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>ServerAddresses</key>
+				<array/>
+				<key>SupplementalMatchDomains</key>
+				<array>
+					  <string>.certs.apple.com</string>
+					  <string>certs.apple.com</string>
+					  <string>.certs2.apple.com</string>
+					  <string>certs2.apple.com</string>
+					  <string>.ocsp4.apple.com</string>
+					  <string>ocsp4.apple.com</string>
+					  <string>.ocsp3.apple.com</string>
+					  <string>ocsp3.apple.com</string>
+					  <string>.ocsp2.apple.com</string>
+					  <string>ocsp2.apple.com</string>
+					  <string>.ocsp.apple.com</string>
+					  <string>ocsp.apple.com</string>
+					  <string>.crl.apple.com</string>
+					  <string>crl.apple.com</string>
+					  <string>.valid.apple.com</string>
+					  <string>valid.apple.com</string>
+					  <string>.ffapple.com</string>
+					  <string>ffapple.com</string>
+					  <string>ff2apple.com</string>
+					  <string>.ffapple.com</string>
+					  <string>ff.apple.com</string>
+					  <string>ff2.apple.com</string>
+					  <string>.ff.apple.com</string>
+					  <string>appattest.apple.com</string>
+					  <string>vpp.itunes.apple.com</string>
+					  <string>comm-main.ess.apple.com</string>
+					  <string>comm-cohort.ess.apple.com</string>
+					  <string>axm-app.apple.com</string>
+					  <string>guzzoni-apple-com.v.aaplimg.com</string>
+       
+				</array>
+			</dict>
+			<key>PayloadDisplayName</key>
+			<string>Allow Software IOS</string>
+			<key>PayloadIdentifier</key>
+			<string>com.cloudflare.warp.5A31FA24-FF8C-41EA-989E-F070820F2A80</string>
+			<key>PayloadOrganization</key>
+			<string>Cập nhập phầm mềm IOS</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>5A31FA24-FF8C-41EA-989E-F070820F2A80</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+    </array>
+  </dict>
+</plist>
